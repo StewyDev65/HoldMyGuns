@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "holdmyguns",
+  "version": "${version}",
+  "name": "HoldMyGuns",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/holdmyguns/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.johnnymod.holdmyguns.client.HoldmygunsDataGenerator"
+    ],
+    "client": [
+      "org.johnnymod.holdmyguns.client.HoldmygunsClient"
+    ],
+    "main": [
+      "org.johnnymod.holdmyguns.Holdmyguns"
+    ]
+  },
+  "mixins": [
+    "holdmyguns.mixins.json",
+    {
+      "config": "holdmyguns.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
