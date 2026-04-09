@@ -27,8 +27,8 @@ Drop the jar into your `mods/` folder alongside Hold My Items and Point Blank. N
 
 ## Notes
 
-- Client-side only — safe for servers, will not cause missing mod errors
-- This is my first uploaded mod — feedback and issues welcome!
+- Client-side only. Safe for servers, will not cause missing mod errors
+- This is my first _uploaded_ mod!
 - If a future update to either mod breaks compatibility, open an issue
 
 ## Building from Source
